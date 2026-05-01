@@ -29,7 +29,8 @@ modulo = st.sidebar.slider("Módulo, m (mm)", 1.0, 10.0, 4.0, step=0.5)
 
 st.sidebar.header("2. Tren de Engranes")
 N1 = st.sidebar.slider("Dientes del Piñón (N1)", 12, 40, 18, step=1)
-N2 = st.sidebar.slider("Dientes de la Rueda (N2)", 12, 100, 54, step=1)
+# MODIFICACIÓN: Límite superior ampliado a 200 dientes para permitir relaciones 8:1
+N2 = st.sidebar.slider("Dientes de la Rueda (N2)", 12, 200, 54, step=1)
 
 st.sidebar.header("3. Potencia y Velocidad")
 omega1 = st.sidebar.slider("Vel. de Entrada Piñón, ω1 (RPM)", 100, 3500, 1750, step=50)
